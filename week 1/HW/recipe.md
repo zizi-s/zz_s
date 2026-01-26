@@ -25,4 +25,4 @@
 7. Second Fry (Finish): Heat oil to 400°F. Fry the frozen, par-fried potatoes for 2-3 minutes until golden brown and crispy.
 8. Season: Remove, drain, and immediately toss with fine salt. 
 
-	![Completed Dish](french_fries.jpg)
+	![Completed Dish](../img/Mcdonald's_French_Fries.jpg)
