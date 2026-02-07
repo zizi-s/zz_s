@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <title>McDonald's French Fries</title>
+
+    <style type="text/CSS">
+      header *{
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        margin: 0;
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+
+      ul.navbar {
+        /* remove all bullet point */
+        list-style-type: none;
+        overflow: hidden;
+        background-color: rgb(255, 222, 183);
+        /* make the parent element's font size 0 when using inline block to get rid of the tiny annoying space between letters 
+        (bc letters usually for text) */
+        font-size: 0;
+      }
+
+      ul.navbar li {
+        display: inline-block;
+        font-size: 1.3rem;
+        /* 三个按钮平分；100/3 */
+        width: 33.3333%; 
+      }
+
+      /* descendant selector；a默认是 inline（行内元素），只包住文字本身，形状不会像一个“盒子”。display：block会让它变成块级元素*/
+      ul.navbar li a {
+        display: block;
+        text-align: center;
+        /* block的尺寸 */
+        width: 100%;
+        padding: 20px;
+        /* padding-top: 50px; */
+        color: black;
+        text-decoration: none;
+      }
+
+      .active{
+        background-color: aqua;
+      }
+
+      li a:hover {
+        background-color: rgb(255, 66, 56);
+      }
+      aside {
+        width: 30%;
+        padding-left: 15px;
+        margin-left: 15px;
+        float: right;
+        background-color: rgb(255, 243, 225);
+      }
+</style>
+</head>
+<body>
+
+  <header>
+      <!-- Place your Nav Links Here -->
+    <nav>
+    	<!-- use UL LI and A for Nav Links within our NAV tag -->
+         <ul class="navbar"> 
+            <li><a href="./index.html" >Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+
+
+         </ul>
+    </nav>
+ </header>
+
+<main>
+  <article>
+    <header>
+    <h1>McDonald's French Fries</h1>
+    <p>thin, batonnet-cut strips of potato that are deep-fried until golden and crispy on the outside and soft inside</p>
+    </header>
+
+     <aside>
+      <h3>Tips</h3>
+        <ul>
+            <li>Eat them within 5-10 minutes before they lose heat</li>
+            <li>Eat with ketchup</li>
+            <li>Ask for "no salt" to get a fresh batch cooked just for you, then add salt packets yourself.</li>
+
+
+
+        </ul>
+    </aside>
+
+    <figure>
+      <img 
+       src="https://www.chowhound.com/img/gallery/there-are-more-ingredients-in-mcdonalds-french-fries-than-you-might-expect/l-intro-1727285963.jpg"
+       alt="Completed Dish"
+       width="700px"
+       height="450px"
+      />
+    </figure>
+
+    <section>
+    <h3>Ingredients</h3>
+<!-- lists item -->
+<ul>
+    <li> Potatoes</li>
+    <li> Vegetable oil (canola, corn, soybean, hydrogenated soybean)</li>
+    <li> Natural beef flavor (wheat and milk derivatives)</li>
+    <li>Dextrose</li>
+    <li>Sodium acid pyrophosphate</li>
+    <li>Salt</li>
+</ul>
+    </section>
+
+    <section>
+<h3>Instructions</h3>
+<!-- ordered list -->
+<ol>
+    <li>Prep Potatoes: Peel Russet potatoes and cut them into thin \(1/4\)-inch by \(1/4\)-inch sticks (approx. 4-6 inches long).</li>
+    <li>Soak & Rinse: Soak potato strips in cold water, rinsing 2-3 times until the water runs clear to remove excess starch.</li>
+    <li>Blanch/Cook: Boil the potato strips in water with 1 tbsp sugar and 1 tbsp white vinegar for 10 minutes to ensure a tender interior.</li>
+    <li>Dry & Freeze: Drain the potatoes, pat them completely dry, and freeze for at least 30 minutes to 1 hour.</li>
+    <li>First Fry (Par-fry): Heat oil (vegetable oil or a mix with beef tallow) to 350°F-360°F. Fry in batches for 50 seconds to 2 minutes.</li>
+    <li>Cool & Re-freeze: Drain and let the fries cool completely. For best results, freeze the par-fried potatoes for at least 1 hour.</li>
+    <li>Second Fry (Finish): Heat oil to 400°F. Fry the frozen, par-fried potatoes for 2-3 minutes until golden brown and crispy.</li>
+    <li>Season: Remove, drain, and immediately toss with fine salt.</li>
+</ol>
+    </section>
+     
+     </article>
+</main>
+
+<footer>
+  <a href="https://www.chowhound.com/1673367/how-many-ingredients-mcdonalds-french-fries/"
+target="_self">Link to original recipe.</a>
+<p>Contact<br>
+  <a href="mailto:zs2938@nyu.edu">zs2938@nyu.edu</a></p>
+  <a href="#top">Back to top</a>
+</footer>
+</body>
+</html>

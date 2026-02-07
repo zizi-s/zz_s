@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>Intro to CSS Text and Spans</title>
+    <style type="text/CSS">
+      *{
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h2 {
+        color:blueviolet;
+        background-color: chartreuse;
+
+        color: #FF0000;
+        background-color:#99ffec;
+
+        color: rgb(0,0,120);
+        background-color: rgba(0,0,120,0.2);
+      }
+      /* class selector begin with */
+      .align_right{
+        width: 50%;
+        text-align: right;
+      }
+
+      .alig_justified{
+        text-align: justify;
+      }
+      
+      .silly_text{
+        font-family: fantasy;
+      }
+      /* ID selector begin with # */
+#really_importatn{
+  font-weight: 700;
+}
+
+    </style>
+  </head>
+  <body>
+    <!-- inline styling this will override any stylesheets above -->
+    <h1 style="margin: 20px 10px 5px 5px; margin-top: 50px;">Heading 1 Display Block</h1>
+
+    <h2>remeber only 1 h1 per page</h2>
+
+    <p class="align_right">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+
+    <span class="silly_text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</span>
+     when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+  
+    </p>
+
+    <p id="really_imporatnt" class="align_justified">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry
+    </p>
+  </body>
+  <body></body>
+</html>

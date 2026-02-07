@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>Simple Navbar | Inline-Block</title>
+
+    <style type="text/CSS">
+      *{
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+
+      ul {
+        /* remove all bullet point */
+        list-style-type: none;
+        overflow: hidden;
+        background-color: rgb(255, 223, 234);
+        /* make the parent element's font size 0 when using inline block to get rid of the tiny annoying space between letters 
+        (bc letters usually for text) */
+        font-size: 0;
+      }
+
+      li {
+        display: inline-block;
+        font-size: 1rem;
+        /* width: 200px; */
+      }
+
+      /* descendant selector；a默认是 inline（行内元素），只包住文字本身，形状不会像一个“盒子”。display：block会让它变成块级元素*/
+      li a {
+        display: block;
+        text-align: center;
+        /* block的尺寸 */
+        width: 100px;
+        padding: 10px;
+        /* padding-top: 50px; */
+        color: black;
+        text-decoration: none;
+      }
+
+      .active{
+        background-color: aqua;
+      }
+
+      li a:hover {
+        background-color: lightsteelblue;
+      }
+
+
+
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li>
+            <a
+              class="active"
+              href="#"
+              >Link 2</a
+            >
+          </li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
