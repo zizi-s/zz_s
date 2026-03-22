@@ -246,12 +246,6 @@ main {
   100% { transform: rotate(0deg) translateX(0); }
 }
 
-@media (max-width: 800px) {
-  .blindbox-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 .habits-hero {
   width: min(92vw, 1200px);
   margin: 0 auto;
