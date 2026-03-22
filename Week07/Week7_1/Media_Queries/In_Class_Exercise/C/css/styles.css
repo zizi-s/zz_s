@@ -1,0 +1,85 @@
+/* global styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* desktop first styling approach */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../img/grey_wash_wall.png);
+    padding: 0 2rem;
+    position: relative;
+}
+
+.brand{
+    margin: 0;
+    font-weight: 300;
+}
+
+header a {
+    color: #aaa
+    text-decoration: none;   
+}
+
+/* hide our mobile hamberger icon on desktop */
+
+.mobile-menu {
+    display: none;
+}
+
+.menu{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu li {
+    min-width: 5rem;
+}
+.menu li a { 
+    display: block;
+    padding: 1rem;
+
+}
+
+.menu li a:hover {
+    color: #eee;
+    background-color: blue;
+}
+
+.container {
+ padding: 2rem;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ flex-wrap: wrap;
+}
+
+.thumb {
+flex: 0 0 30%;
+margin: 2rem auto;
+}
+
+/* medai quieries */
+
+/* tablet and smaller */
+@media screen and (min-wdith: 768px) and (max-wdith: 1024px{
+    
+} 
+
+/* mobile */
